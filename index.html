@@ -41,24 +41,51 @@
           </div>
         </div>
       </header>
-      
+        <div class="overlay">
+          <div class="over-1"></div>
+          <div class="over-2"></div>
+          <div class="over-3"></div>
+         </div>
       <main>
           <section class="hero">
-              <div class="container">
+              <div class="container relative">
+                <div class="for-animation" id="scene">
+                  <img data-depth="-.1" class="hero__mint" src="./img/mint.png" alt="mint" />
+                  <img data-depth=".3" class="hero__mint--small" src="./img/small-mint.png" alt="small-mint" />
+                  <img data-depth="-1" class="hero__pepper" src="./img/pepper.png" alt="pepper" />
+                </div>
                   <div class="hero__row">
-                      <div class="col-6">
-                          <div class="hero__item">
-                              <h1 class="hero__title"></h1>
-                              <p class="hero__description"></p>
-                              <form action="" class="hero__form">
-                                  <button class="hero__btn btn"></button>
-                                  <label for="search"></label>
-                              </form>
-                          </div>
-                      </div>
+                     <div class="col-5">
+                       <div class="hero__item">
+                         <h1 class="hero__title">
+                          Free Home <span class="orange">Delivery Within</span> an Hour
+                         </h1>
+                          <p class="hero__description">
+                           There are many variations of passages of Lorem Ipsum available, but the majority
+                           have suffered alteration in some form, by injected humour, or randomised words
+                           which don't look even slightly believable.
+                          </p>
+                          <form class="hero__form">
+                           <button class="btn btn-orange hero__btn">Order Now</button>
+                            <label for="search" class="hero__label">
+                             <input id="search" type="text" placeholder="Enter food name" />
+                            </label>
+                              <button class="btn btn-orange hero__search">Search</button>
+                          </form>
+                    </div>
                   </div>
+                    <div class="col-7">
+                      <div class="hero__item text-right">
+                         <img class="hero__courier" src="./img/hero.png" alt="the-boy" />
+                      </div>
+                     </div>
+                </div>
               </div>
           </section>
       </main>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+      <script src="./js/index.js"></script>
 </body>
 </html>

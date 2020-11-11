@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import './_variables.scss';
-@import './_base.scss';
-@import './_column.scss';
-@import './_header.scss';
-@import './_hero.scss'; 
+@import './_variables';
+@import './base';
+@import './fonts';
+@import './column';
+@import './header';
+@import './hero'; 
+@import './categories';

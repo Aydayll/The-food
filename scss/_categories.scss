@@ -1,0 +1,21 @@
+.categories{
+    height: 100vh;
+    &__header{
+        margin-top: 190px;
+        max-width: 825px;;
+    }
+    &__title{
+        font-family: "Fresh Cream";
+        font-size: 36px;
+        color: $color-black;
+    }
+    &__description{
+        margin: 50px 0 100px;
+        color: $color-spaceGray;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    &__item{
+        position: relative;
+    }
+}

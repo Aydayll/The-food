@@ -306,4 +306,30 @@ span {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+.categories {
+  height: 100vh;
+}
+
+.categories__header {
+  margin-top: 190px;
+  max-width: 825px;
+}
+
+.categories__title {
+  font-family: "Fresh Cream";
+  font-size: 36px;
+  color: #222222;
+}
+
+.categories__description {
+  margin: 50px 0 100px;
+  color: #707070;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.categories__item {
+  position: relative;
+}
 /*# sourceMappingURL=index.css.map */

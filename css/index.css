@@ -249,6 +249,7 @@ span {
 .hero__title {
   font-family: "Fresh Cream";
   font-size: 64px;
+  font-weight: 700;
   line-height: 110px;
 }
 
@@ -319,17 +320,30 @@ span {
 .categories__title {
   font-family: "Fresh Cream";
   font-size: 36px;
+  font-weight: 400;
   color: #222222;
 }
 
 .categories__description {
+  font-family: "Fresh Cream";
+  font-size: 16px;
+  font-weight: 400;
   margin: 50px 0 100px;
   color: #707070;
-  font-weight: 400;
-  font-size: 16px;
 }
 
 .categories__item {
   position: relative;
+}
+
+.categories__link {
+  position: absolute;
+  top: 256px;
+  right: 32px;
+  bottom: auto;
+  left: auto;
+  padding: 20px 40px;
+  background-color: #ffbe00;
+  min-width: 455px;
 }
 /*# sourceMappingURL=index.css.map */

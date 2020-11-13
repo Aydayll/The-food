@@ -5,22 +5,27 @@
         max-width: 825px;;
     }
     &__title{
-        @include font($font-cream, 36px);
+        @include font(font-cream, 36px);
         color: $color-black;
     }
     &__description{
+        @include font(16px);
+        font-family: $font-poppins;
         margin: 50px 0 100px;
         color: $color-spaceGray;
-        font-weight: 400;
-        font-size: 16px;
     }
     &__item{
         position: relative;
+    
+    img{
+       width:100% ;
     }
+}
     &__link{
-        position: absolute;
-        left: 32px;
-        bottom: 60px;
-        background-color: #fff;
+        @include position (absolute, 256px, 32px);
+        padding: 20px 40px ;
+        background-color: $color-orange;
+        min-width: 455px;
+    
     }
 }

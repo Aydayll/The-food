@@ -439,4 +439,10 @@ span {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+.categories__arrow.is-active {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 /*# sourceMappingURL=index.css.map */

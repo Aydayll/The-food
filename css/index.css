@@ -432,6 +432,8 @@ span {
   border-radius: 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-animation: 0.3s basicAtai 0.3s;
+          animation: 0.3s basicAtai 0.3s;
 }
 
 .categories__arrow svg {
@@ -441,8 +443,45 @@ span {
 }
 
 .categories__arrow.is-active {
-  right: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-animation: 0.3s atai 0.3s forwards;
+          animation: 0.3s atai 0.3s forwards;
+}
+
+@-webkit-keyframes atai {
+  from {
+    right: 7px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes atai {
+  from {
+    right: 7px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes basicAtai {
+  from {
+    right: 0;
+  }
+  to {
+    right: 7px;
+  }
+}
+
+@keyframes basicAtai {
+  from {
+    right: 0;
+  }
+  to {
+    right: 7px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

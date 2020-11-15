@@ -77,13 +77,30 @@
         padding: 25px 35px;
         border-radius: 16px;
         transition: 0.3s;
+        animation: 0.3s basicAtai 0.3s;
         svg{
             fill: $color-black;
             transition: 0.3s;
         }
         &.is-active{
-            right: 0;
             transform:rotate(180deg);
+            animation: 0.3s atai 0.3s forwards;
         }
     }
+    }
+    @keyframes atai{
+        from{
+            right: 7px;
+        }
+        to{
+            right: 0;
+        }
+    }
+    @keyframes basicAtai{
+        from{
+            right: 0;
+        }
+        to{
+            right: 7px;
+        }
     }

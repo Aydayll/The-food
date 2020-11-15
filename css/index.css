@@ -329,6 +329,9 @@ span {
 }
 
 .categories__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   margin: 50px 0 100px;
   color: #707070;
 }
@@ -350,5 +353,31 @@ span {
   padding: 20px 40px;
   background-color: #ffbe00;
   min-width: 455px;
+  border-radius: 16px;
+}
+
+.categories__type {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.categories__arrow {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  bottom: auto;
+  left: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #fff;
+  padding: 25px 35px;
+  border-radius: 16px;
+}
+
+.categories__arrow svg {
+  fill: #222222;
 }
 /*# sourceMappingURL=index.css.map */

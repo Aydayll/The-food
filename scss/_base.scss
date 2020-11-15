@@ -68,6 +68,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 2;
     width: 100vw;
     height: 100vh;
     animation: ayday 1s;
@@ -80,7 +81,7 @@
       left: 0;
       width: 33.33%;
       height: 100%;
-      
+      background-color: black;
     }
     &-2 {
       position: absolute;
@@ -88,6 +89,7 @@
       left: 33.33%;
       width: 33.33%;
       height: 100%;
+      background-color: black;
       
     }
     &-3 {
@@ -96,9 +98,10 @@
       left: 66.66%;
       width: 33.33%;
       height: 100%;
+      background-color: black;
     
   }
-  //@keyframes ayday{
+  //@keyframes ayday {
     from{
       z-index: 2;
     }

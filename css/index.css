@@ -80,6 +80,7 @@ span {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   -webkit-animation: ayday 1s;
@@ -92,6 +93,7 @@ span {
   left: 0;
   width: 33.33%;
   height: 100%;
+  background-color: black;
 }
 
 .over-2 {
@@ -100,6 +102,7 @@ span {
   left: 33.33%;
   width: 33.33%;
   height: 100%;
+  background-color: black;
 }
 
 .over-3 {
@@ -108,6 +111,7 @@ span {
   left: 66.66%;
   width: 33.33%;
   height: 100%;
+  background-color: black;
 }
 
 .over from {
@@ -325,15 +329,16 @@ span {
 }
 
 .categories__description {
-  font-family: "Fresh Cream";
-  font-size: 16px;
-  font-weight: 400;
   margin: 50px 0 100px;
   color: #707070;
 }
 
 .categories__item {
   position: relative;
+}
+
+.categories__item img {
+  width: 100%;
 }
 
 .categories__link {

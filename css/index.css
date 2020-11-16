@@ -453,8 +453,8 @@ span {
   right: 80%;
   bottom: auto;
   left: auto;
-  -webkit-animation: 0.3s basicAtai 0.4s forwards;
-          animation: 0.3s basicAtai 0.4s forwards;
+  -webkit-animation: 0.6s basicAtai 0.4s forwards;
+          animation: 0.6s basicAtai 0.4s forwards;
 }
 
 @-webkit-keyframes atai {
@@ -482,19 +482,25 @@ span {
 }
 
 @-webkit-keyframes basicAtai {
-  from {
+  0% {
     right: 80%;
   }
-  to {
+  50% {
+    right: -7px;
+  }
+  100% {
     right: 7px;
   }
 }
 
 @keyframes basicAtai {
-  from {
+  0% {
     right: 80%;
   }
-  to {
+  50% {
+    right: -7px;
+  }
+  100% {
     right: 7px;
   }
 }

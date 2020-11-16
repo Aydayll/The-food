@@ -1,121 +1,275 @@
-.categories{
-    position: relative;
-    height: 100vh;
-    &::before{
-        content: '';
-        @include position(absolute, 400px, 0);
-        width: 100%;
-        min-height:830px;
-        background-color: $color-gray;
-        z-index: -1;
-    }
-    &__header{
-        margin-top: 190px;
-        max-width: 825px;;
-    }
-    &__title{
-        @include font($font-cream, 36px);
-        color: $color-black;
-    }
-    &__description{
-        @include font($font-poppins, 16px);
-        margin: 50px 0 100px;
-        color: $color-spaceGray;
-    }
-    &__row{
-        margin: 0 -15px;
-    }
-    &__item{
-        padding: 0 15px;
-        position: relative;
-        transition: 0.3s;
-    
-    img{
-       width:100% ;
-       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-       border-radius: 30px;
-       transition: 0.3s;
-    }
-    &:hover{
-        margin-top: -20px;
-        img{
-            box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.3);
-        }
-        .categories{
-            &__link{
-                background-color: $color-black;
-            }
-            &__type{
-                color:$color-white ; 
-            }
-            &__arrow{
-                background-color: $color-orange;
-                svg{
-                 fill: $color-white;
-                }
-            }
-        }
-    }
-}
-    &__link{
-        @include position (absolute, 256px, 32px);
-        padding: 20px 40px ;
-        background-color: $color-orange;
-        min-width: 455px;
-        border-radius: 16px;
-        transition: 0.3s;
-    }
-    &__type{
-        @include font($font-poppins, 24px, 600);
-        color: $color-black;
-        transition: 0.3s;
-    }
-    &__arrow{
-        display: inline-flex;
-        background-color: $color-white;
-        padding: 25px 35px;
-        border-radius: 16px;
-        transition: 0.3s;
-        
-        svg{
-            fill: $color-black;
-            transition: 0.3s;
-        }
-        &.is-active{
-            @include position (absolute, 0, 7px);
-            transform:rotate(180deg);
-            animation: 0.6s atai 0.4s ease-in-out forwards;
-        }
-        &.is-backward{
-            @include position (absolute, 0, 80%);
-            animation: 0.6s basicAtai 0.4s forwards; 
-        }
-    }
-    }
+.categories {
+	position: relative;
+	
+	&::before {
+		content: "";
+		@include position(absolute, 400px, 0);
+		width: 100%;
+		min-height: 830px;
+		background-color: $color-gray;
+		z-index: -1;
+	}
+	&__header {
+		margin-top: 190px;
+		max-width: 825px;
+	}
+	&__title {
+		@include font($font-cream, 36px);
+		color: $color-black;
+	}
+	&__description {
+		@include font($font-poppins, 16px);
+		margin: 50px 0 100px;
+		color: $color-spaceGray;
+	}
+	&__row {
+		margin: 0 -15px;
+	}
+	&__item {
+		padding: 0 15px;
+		position: relative;
+		transition: 0.3s;
+		img {
+			width: 100%;
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+			border-radius: 30px;
+			transition: 0.3s;
+		}
+		&:hover {
+			margin-top: -20px;
+			img {
+				box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.3);
+			}
+			.categories {
+				&__link {
+					background-color: $color-black;
+				}
+				&__type {
+					color: $color-white;
+				}
+				&__arrow {
+					background-color: $color-orange;
+					svg {
+						fill: $color-white;
+					}
+				}
+				&__text {
+					color: rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+	}
+	&__link {
+		@include position(absolute, auto, 50%, 10%);
+		padding: 20px 40px;
+		background-color: $color-orange;
+		min-width: 455px;
+		border-radius: 16px;
+		transition: 0.3s;
+		overflow: hidden;
+		transform: translateX(50%);
+		&.is-active::before {
+            
+			animation: 0.6s link 1.2s forwards;
+		}
+		&.is-backward {
+			animation: 0.6s linkBackward 0s forwards;
+		}
+		&.is-active::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 0;
+			height: 100%;
+			background-color: $color-orange;
+			animation: 2s beforeOrange 0.3s forwards;
+		}
+		&.is-backward::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $color-orange;
+			animation: 2s beforeOrangeBackwards 0s forwards;
+		}
+	}
+	&__type {
+		@include font($font-poppins, 24px, 600);
+		color: $color-black;
+		transition: 0.3s;
+	}
+	&__arrow {
+		display: inline-flex;
+		background-color: $color-white;
+		padding: 25px 35px;
+		border-radius: 16px;
+		transition: 0.3s;
+		height: 100%;
+		max-height: 75px;
+		svg {
+			fill: $color-black;
+			transition: 0.3s;
+		}
+		&.is-active {
+            @include position(absolute, 0, 7px);
+			transform: rotate(180deg);
+			animation: 1.2s arrow 0.4s forwards;
 
-    @keyframes atai{
-        0% {
-            right: 7px;
-          
-        }
-        50% {
-            right: 0;
-        }
-        
-        100% {
-            right: 80%;
-         
-        }
-    }
-    
-    @keyframes basicAtai{
-        0%{
-            right: 80%;
-        }
-        50%{
-            right: -7px;
-        }
-        100%{
-            right: 7px;
-        }
-    }
+			
+		}
+		&.is-backward {
+            @include position(absolute, 0, 80%);
+			transform: rotate(270deg);
+			animation: 1s arrowBackward 0s forwards;
+		}
+	}
+	&__text {
+		font-family: "Poppins", sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		margin: 20px 0 0px;
+		color: $color-black;
+		transition: 0.3s;
+	}
+	&__checkout {
+		@include position(absolute, 67%, 50%);
+		@include font($font-poppins, 18px, 700);
+		background-color: $color-white;
+		color: $color-black;
+		padding: 10px 30px;
+		border-radius: 30px;
+		transform: translateX(50%);
+		transition: 0.3s;
+		border: 2px solid transparent;
+		text-transform: uppercase;
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.3;
+		transition-delay: 0.01s;
+		&:hover {
+			background-color: $color-black;
+			color: $color-white;
+			border: 2px solid $color-white;
+		}
+		&.is-active {
+			transition-delay: 2s;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+@keyframes arrow {
+	0% {
+		right: 7px;
+		transform: rotate(180deg);
+	}
+	25% {
+		right: -7px;
+		transform: rotate(180deg);
+	}
+	50% {
+		right: 80.6%;
+		transform: rotate(180deg);
+	}
+	75% {
+		right: 80.6%;
+		transform: rotate(270deg);
+	}
+	100% {
+		right: 80.6%;
+		transform: rotate(270deg);
+		background-color: transparent;
+	}
+}
+@keyframes arrowBackward {
+	0% {
+		right: 80.6%;
+		transform: rotate(270deg);
+		background-color: transparent;
+	}
+	25% {
+		right: 80.6%;
+		transform: rotate(270deg);
+	}
+	50% {
+		right: 80.6%;
+		transform: rotate(180deg);
+	}
+	75% {
+		right: -7px;
+		transform: rotate(180deg);
+	}
+	100% {
+		right: 7px;
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes beforeOrange {
+	0% {
+		width: 0%;
+	}
+	25% {
+		height: 100%;
+	}
+	50% {
+		width: 100%;
+		top: 0;
+	}
+	75% {
+		width: 100%;
+		top: 0;
+	}
+	100% {
+		width: 100%;
+		top: -101%;
+	}
+}
+
+@keyframes beforeOrangeBackwards {
+	0% {
+		width: 100%;
+		top: -101%;
+	}
+	25% {
+		width: 100%;
+		top: 0;
+	}
+	50% {
+		width: 100%;
+		top: 0;
+	}
+	75% {
+		height: 100%;
+	}
+	100% {
+		width: 0%;
+	}
+}
+
+@keyframes link {
+	0% {
+		height: 74px;
+	}
+	100% {
+		text-align: center;
+		height: 80%;
+	}
+}
+
+@keyframes linkBackward {
+	0% {
+		height: 80%;
+		text-align: center;
+	}
+	50% {
+		height: 80%;
+	}
+	100% {
+		height: 75px;
+	}
+}

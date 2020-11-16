@@ -419,11 +419,6 @@ span {
 }
 
 .categories__arrow {
-  position: absolute;
-  top: 0;
-  right: 7px;
-  bottom: auto;
-  left: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -432,8 +427,6 @@ span {
   border-radius: 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-animation: 0.3s basicAtai 0.3s;
-          animation: 0.3s basicAtai 0.3s;
 }
 
 .categories__arrow svg {
@@ -443,33 +436,54 @@ span {
 }
 
 .categories__arrow.is-active {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  bottom: auto;
+  left: auto;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-animation: 0.3s atai 0.3s forwards;
-          animation: 0.3s atai 0.3s forwards;
+  -webkit-animation: 0.6s atai 0.4s ease-in-out forwards;
+          animation: 0.6s atai 0.4s ease-in-out forwards;
+}
+
+.categories__arrow.is-backward {
+  position: absolute;
+  top: 0;
+  right: 80%;
+  bottom: auto;
+  left: auto;
+  -webkit-animation: 0.3s basicAtai 0.4s forwards;
+          animation: 0.3s basicAtai 0.4s forwards;
 }
 
 @-webkit-keyframes atai {
-  from {
+  0% {
     right: 7px;
   }
-  to {
+  50% {
     right: 0;
+  }
+  100% {
+    right: 80%;
   }
 }
 
 @keyframes atai {
-  from {
+  0% {
     right: 7px;
   }
-  to {
+  50% {
     right: 0;
+  }
+  100% {
+    right: 80%;
   }
 }
 
 @-webkit-keyframes basicAtai {
   from {
-    right: 0;
+    right: 80%;
   }
   to {
     right: 7px;
@@ -478,7 +492,7 @@ span {
 
 @keyframes basicAtai {
   from {
-    right: 0;
+    right: 80%;
   }
   to {
     right: 7px;

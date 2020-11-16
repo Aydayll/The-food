@@ -5,9 +5,11 @@
 
    for(let aydai = 0; aydai < 3; aydai++) {
        console.log('Интерация номер', aydai)
-       linksArray[aydai].addEventListener('click', function (EveryAidai) {
+       linksArray[aydai].addEventListener('click', 
+       function (EveryAidai) {
            EveryAidai.preventDefault()
            arrowsArray[aydai].classList.toggle('is-active')
+           arrowsArray[aydai].classList.toggle('is-backward')
        })
    }
    

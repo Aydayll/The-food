@@ -114,6 +114,19 @@ span {
   background-color: black;
 }
 
+.over .section__header {
+  max-width: 892px;
+  margin: 0 auto;
+}
+
+.over .section__title {
+  padding-top: 20px;
+}
+
+.over .section__description {
+  padding-bottom: 20px;
+}
+
 .over from {
   z-index: 2;
 }
@@ -845,7 +858,6 @@ span {
 
 .services__title {
   padding-top: 10px;
-  padding-bottom: 10px;
   font-size: 30px;
 }
 

@@ -892,4 +892,8 @@ span {
 .services__item:hover img {
   border-color: white;
 }
+
+.sort {
+  padding-top: 240px;
+}
 /*# sourceMappingURL=index.css.map */

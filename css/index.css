@@ -115,6 +115,7 @@ span {
 }
 
 .section__header {
+  text-align: center;
   max-width: 892px;
   margin: 0 auto;
 }

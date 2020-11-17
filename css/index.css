@@ -46,6 +46,18 @@ span {
       flex-wrap: wrap;
 }
 
+.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .btn {
   font-weight: 600;
   font-size: 16px;
@@ -947,7 +959,11 @@ span {
 }
 
 .sort__info {
-  padding: 50px 15px 0;
+  padding: 50px 20px 0;
+}
+
+.sort__picture {
+  width: 100%;
 }
 
 .sort__title {
@@ -956,6 +972,7 @@ span {
   font-weight: 400;
   font-weight: 500;
   color: #222222;
+  line-height: 0;
 }
 
 .sort__price {
@@ -964,6 +981,15 @@ span {
   font-weight: 400;
   font-weight: 500;
   color: #ffbe00;
+}
+
+.sort__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-weight: 500;
+  margin: 15px 0 10px;
+  color: #707070;
 }
 
 @-webkit-keyframes triangle {

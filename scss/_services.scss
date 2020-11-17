@@ -30,5 +30,16 @@
             font-size: 16px;
             color: $color-darkGray;
         }
+        &__item:hover {
+            margin-top: -5px;
+            background-color: $color-orange;
+            color: white;
+            box-shadow: 0 8px 14px 0 $color-orange;
+            p {
+                color: white;
+            }
+            img {
+                border-color: white;
+            }
 
-}
+        }}

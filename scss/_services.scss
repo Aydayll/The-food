@@ -1,12 +1,18 @@
 .services{
     padding-top: 115px;
     text-align: center;
+    &__row {
+		margin: -18px;
+	}
     &__item{
-        margin-left: 10px;
+        transition: 0.3s;
+		cursor: pointer;
+        margin: 10px;
         text-align: center;
         background-color: $color-white;
         border-radius: 30px;
         padding: 50px 34px;
+        box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
     }
         img{
             padding: 10px 10px;

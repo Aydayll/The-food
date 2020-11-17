@@ -823,4 +823,28 @@ span {
     height: 75px;
   }
 }
+
+.services {
+  padding-top: 115px;
+}
+
+.services__item {
+  margin-left: 10px;
+  text-align: center;
+  background-color: #ffbe00;
+  padding: 30px 30px;
+}
+
+.services__item img {
+  padding: 10px 10px;
+  background-color: #fff;
+}
+
+.services__item__title {
+  font-family: "Fresh Cream";
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 /*# sourceMappingURL=index.css.map */

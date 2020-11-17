@@ -16,8 +16,10 @@
     }
         img{
             padding: 10px 10px;
-            background-color: $color-white;
+            border: 2px solid $color-darkGray;
             border-radius: 20px;
+            width: 130px;
+		    height: 95px;
         }
         &__title{
             padding-top: 10px;

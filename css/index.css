@@ -895,6 +895,7 @@ span {
 
 .sort {
   padding-top: 240px;
+  padding-bottom: 240px;
 }
 
 .sort__filter {
@@ -922,7 +923,7 @@ span {
 .sort .filter__items--active::before {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -12px;
   left: 0;
   width: 14px;
   height: 12px;

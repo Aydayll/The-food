@@ -1,5 +1,6 @@
 .sort{
     padding-top: 240px;
+    padding-bottom: 240px;
     &__filter{
         justify-content: center;
     }
@@ -16,11 +17,12 @@
                 &::before{
                     content: '';
                     position: absolute;
-                    bottom: -10px;
+                    bottom: -12px;
                     left: 0;
                     width: 14px;
                     height: 12px;
                     background: url(../img/triangle.svg);
+                    animation: triangle 0.3s forwards linear;
                 }
             }
         }

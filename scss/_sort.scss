@@ -14,11 +14,12 @@
             }
             &--active{
                 position: relative;
+                color: $color-orange;
                 &::before{
                     content: '';
                     position: absolute;
                     bottom: -12px;
-                    left: 0;
+                    left: 0%;
                     width: 14px;
                     height: 12px;
                     background: url(../img/triangle.svg);
@@ -26,5 +27,16 @@
                 }
             }
         }
+    }
+}
+
+@keyframes triangle{
+    0%{
+        bottom: -22px;
+        opacity: 0;
+    }
+    100%{
+        bottom: -12px;
+        opacity: 0;
     }
 }

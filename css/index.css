@@ -918,15 +918,40 @@ span {
 
 .sort .filter__items--active {
   position: relative;
+  color: #ffbe00;
 }
 
 .sort .filter__items--active::before {
   content: '';
   position: absolute;
   bottom: -12px;
-  left: 0;
+  left: 0%;
   width: 14px;
   height: 12px;
   background: url(../img/triangle.svg);
+  -webkit-animation: triangle 0.3s forwards linear;
+          animation: triangle 0.3s forwards linear;
+}
+
+@-webkit-keyframes triangle {
+  0% {
+    bottom: -22px;
+    opacity: 0;
+  }
+  100% {
+    bottom: -12px;
+    opacity: 0;
+  }
+}
+
+@keyframes triangle {
+  0% {
+    bottom: -22px;
+    opacity: 0;
+  }
+  100% {
+    bottom: -12px;
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -5,8 +5,10 @@
     }
     .filter{
         &__items{
+            @include font('Poppins', 16px, 500);
             margin-left: 65px;
-            &::nth-child(1){
+            color:$color-spaceGray ;
+            &:nth-child(1){
               margin: 0;
             }
         }

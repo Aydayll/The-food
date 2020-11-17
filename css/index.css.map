@@ -10,7 +10,8 @@
         "../scss/_column.scss",
         "../scss/_header.scss",
         "../scss/_hero.scss",
-        "../scss/_categories.scss"
+        "../scss/_categories.scss",
+        "../scss/_services.scss"
     ],
     "names": [],
     "file": "index.css"

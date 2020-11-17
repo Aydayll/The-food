@@ -102,12 +102,20 @@
       background-color: black;
     
   }
- 
-  //@keyframes ayday {
-    from{
-      z-index: 2;
-    }
-    to{
-      z-index: -1;
-    }
+}
+.section{
+  &__header{
+    max-width: 892px;
+    margin: 0 auto;
   }
+  &__title{
+  @include font($font-cream, 35px);
+    padding-bottom: 20px;
+  }
+  &__description{
+    padding-top: 20px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    color: $color-darkGray;
+  }
+}

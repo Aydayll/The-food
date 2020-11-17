@@ -121,10 +121,14 @@ span {
 
 .over .section__title {
   padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 35px;
 }
 
 .over .section__description {
   padding-bottom: 20px;
+  font-size: 16px;
+  color: #9e9e9e;
 }
 
 .over from {
@@ -847,7 +851,7 @@ span {
   text-align: center;
   background-color: #fff;
   border-radius: 30px;
-  padding: 30px 30px;
+  padding: 50px 34px;
 }
 
 .services img {
@@ -858,6 +862,7 @@ span {
 
 .services__title {
   padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 30px;
 }
 

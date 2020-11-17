@@ -1,42 +1,49 @@
-.sort{
-    padding-top: 240px;
-    padding-bottom: 240px;
-    &__filter{
-        justify-content: center;
-    }
-    .filter{
-        &__items{
-            @include font('Poppins', 16px, 500);
-            margin-left: 65px;
-            color:$color-spaceGray ;
-            &:nth-child(1){
-              margin: 0;
-            }
-            &--active{
-                position: relative;
-                color: $color-orange;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    bottom: -12px;
-                    left: 0%;
-                    width: 14px;
-                    height: 12px;
-                    background: url(../img/triangle.svg);
-                    animation: triangle 0.3s forwards linear;
-                }
-            }
-        }
-    }
+.sort {
+	padding-top: 240px;
+	padding-bottom: 240px;
+	&__filter {
+		justify-content: center;
+	}
+	.filter {
+		&__items {
+			@include font("Poppins", 16px, 500);
+			margin-left: 65px;
+			color: $color-spaceGray;
+			cursor: pointer;
+			&:nth-child(1) {
+				margin: 0;
+			}
+			&--active {
+				position: relative;
+				color: $color-orange;
+				transition: 0.3s;
+				&::before {
+					content: "";
+					position: absolute;
+					bottom: -12px;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 14px;
+					height: 12px;
+					background: url("../img/triangle.svg");
+					animation: triangle 0.3s forwards ease-in-out;
+				}
+			}
+		}
+	}
 }
 
-@keyframes triangle{
-    0%{
-        bottom: -22px;
-        opacity: 0;
-    }
-    100%{
-        bottom: -12px;
-        opacity: 0;
-    }
+@keyframes triangle {
+	0% {
+		bottom: -22px;
+		opacity: 0;
+	}
+	50% {
+		bottom: -8px;
+		opacity: 0.5;
+	}
+	100% {
+		bottom: -12px;
+		opacity: 1;
+	}
 }

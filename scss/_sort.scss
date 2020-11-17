@@ -40,6 +40,12 @@
     &__title{
         @include font($font-poppins, 25px );
         font-weight: 500;
+        color: $color-black;
+    }
+    &__price{
+        @include font($font-poppins, 30px );
+        font-weight: 500;
+        color: $color-orange;
     }
 }
 

@@ -955,6 +955,15 @@ span {
   font-size: 25px;
   font-weight: 400;
   font-weight: 500;
+  color: #222222;
+}
+
+.sort__price {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-weight: 500;
+  color: #ffbe00;
 }
 
 @-webkit-keyframes triangle {

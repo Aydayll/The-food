@@ -114,23 +114,6 @@ span {
   background-color: black;
 }
 
-.over .section__header {
-  max-width: 892px;
-  margin: 0 auto;
-}
-
-.over .section__title {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 35px;
-}
-
-.over .section__description {
-  padding-bottom: 20px;
-  font-size: 16px;
-  color: #9e9e9e;
-}
-
 .over from {
   z-index: 2;
 }
@@ -896,5 +879,25 @@ span {
 
 .services__item:hover img {
   border-color: white;
+}
+
+.section__header {
+  max-width: 892px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-family: "Fresh Cream";
+  font-size: 35px;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section__description {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-size: 16px;
+  color: #9e9e9e;
 }
 /*# sourceMappingURL=index.css.map */

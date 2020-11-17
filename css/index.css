@@ -904,10 +904,28 @@ span {
 }
 
 .sort .filter__items {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
   margin-left: 65px;
+  color: #707070;
 }
 
 .sort .filter__items:nth-child(1) {
   margin: 0;
+}
+
+.sort .filter__items--active {
+  position: relative;
+}
+
+.sort .filter__items--active::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 14px;
+  height: 12px;
+  background: url(../img/triangle.svg);
 }
 /*# sourceMappingURL=index.css.map */

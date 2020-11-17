@@ -34,6 +34,13 @@
     &__row{
         padding-top: 105px;
     }
+    &__info{
+        padding: 50px 15px 0;
+    }
+    &__title{
+        @include font($font-poppins, 25px );
+        font-weight: 500;
+    }
 }
 
 @keyframes triangle {

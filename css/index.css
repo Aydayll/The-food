@@ -895,5 +895,22 @@ span {
 
 .sort {
   padding-top: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sort__filter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sort .filter__items {
+  margin-left: 65px;
+}
+
+.sort .filter__items::nth-child(1) {
+  margin: 0;
 }
 /*# sourceMappingURL=index.css.map */

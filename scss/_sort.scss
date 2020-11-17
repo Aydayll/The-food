@@ -3,4 +3,12 @@
     &__filter{
         justify-content: center;
     }
+    .filter{
+        &__items{
+            margin-left: 65px;
+            &::nth-child(1){
+              margin: 0;
+            }
+        }
+    }
 }

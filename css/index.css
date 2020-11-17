@@ -826,25 +826,31 @@ span {
 
 .services {
   padding-top: 115px;
+  text-align: center;
 }
 
 .services__item {
   margin-left: 10px;
   text-align: center;
-  background-color: #ffbe00;
+  background-color: #fff;
+  border-radius: 30px;
   padding: 30px 30px;
 }
 
-.services__item img {
+.services img {
   padding: 10px 10px;
   background-color: #fff;
+  border-radius: 20px;
 }
 
-.services__item__title {
-  font-family: "Fresh Cream";
-  font-size: 30px;
-  font-weight: 400;
+.services__title {
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.services__description {
+  font-size: 16px;
+  color: #9e9e9e;
 }
 /*# sourceMappingURL=index.css.map */

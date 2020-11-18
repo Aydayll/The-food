@@ -1,5 +1,9 @@
 .header {
-	padding-top: 48px;
+	padding-top: 48px 0 20px;
+	position: fixed;
+	width: 100%;
+	background-color: $color-white;
+	z-index: 2;
 	&__row {
 		display: flex;
 		justify-content: space-between;

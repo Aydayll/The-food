@@ -175,7 +175,11 @@ span {
 }
 
 .header {
-  padding-top: 48px;
+  padding-top: 48px 0 20px;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
 }
 
 .header__row {
@@ -965,8 +969,6 @@ span {
 
 .sort__picture {
   width: 100%;
-  -webkit-box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.2);
 }
 
 .sort__title {
@@ -1005,9 +1007,12 @@ span {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border: 2px solid transparent;
+  opacity: 1;
 }
 
-.sort__add::before, .sort__add ::after {
+.sort__add::before,
+.sort__add ::after {
   content: '';
   position: absolute;
   height: 28px;
@@ -1016,6 +1021,7 @@ span {
   border-radius: 2px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .sort__add::before {
@@ -1025,8 +1031,33 @@ span {
           transform: translate(-50% 50%);
 }
 
+.sort__add::after {
+  height: 32px;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+
 .sort__add::hover {
   background-color: #fff;
+  border: 2px solid #ffbe00;
+}
+
+.sort__add::hover::before, .sort__add::hover::after {
+  background-color: #ffbe00;
+}
+
+.sort__add:active {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.sort__add--active {
+  background-color: transparent !important;
+  border: 2px solid transparent !important;
+}
+
+.sort__add--active::before, .sort__add--active::after {
+  opacity: 0;
 }
 
 @-webkit-keyframes triangle {

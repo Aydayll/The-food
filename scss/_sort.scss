@@ -39,7 +39,7 @@
     }
     &__picture{
 		width: 100%;
-		box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.2);
+		
     }
     &__title{
         @include font($font-poppins, 25px );
@@ -99,8 +99,27 @@
 			background-color: $color-orange;
 			}
 		}
+		&:active {
+			transform: translateY(-10px);
+		}
+		&--active {
+			background-color: transparent !important;
+			border: 2px solid transparent !important;
+			&::before,
+			&::after {
+				opacity: 0;
+			}
+		}
 	}
 }
+
+    $brand-success: #5cb85c;
+	$loader-size: 4em;
+	$check-height: $loader-size/2;
+	$check-width: $check-height/2;
+	$check-left: ($loader-size/6 + $loader-size/12);
+	$check-thickness: 3px;
+	$check-color: $brand-success;
 
 @keyframes triangle {
 	0% {

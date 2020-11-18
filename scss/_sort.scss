@@ -44,13 +44,20 @@
 	
     }
     &__row{
-        padding-top: 65px;
-    }
+		padding-top: 60px;
+		margin: -25px;
+	}
+	&__item {
+		padding: 45px 25px;
+	}
     &__info{
         padding: 50px 20px 0;
     }
     &__picture{
 		width: 100%;
+		box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.2);
+		border-radius: 28px;
+		height: 425px;
 		
     }
     &__title{

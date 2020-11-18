@@ -45,7 +45,7 @@ function sortSection() {
 }
 sortSection();
 
-function sortFilter(index) 
+function sortFilter(index) {
   const filterItems = document.querySelectorAll('.filter__element');
   const filterItemsName = [
     'data-all',
@@ -61,3 +61,16 @@ function sortFilter(index)
       ayday.style.display = 'block';
     }
   });
+}
+function cart() {
+  const addButtons = document.querySelectorAll('.sort__add');
+  const cartCounter = document.querySelector('.cart__counter');
+  let counter = 0;
+  addButtons.forEach((button) => {
+    button.addEventListener('click', function () {
+      counter += 1;
+      cartCounter.innerHTML = `${counter}`;
+    });
+  });
+}
+cart();

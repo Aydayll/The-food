@@ -55,7 +55,7 @@
     }
     &__picture{
 		width: 100%;
-		box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.2);
+		
 		border-radius: 28px;
 		height: 425px;
 		
@@ -77,20 +77,21 @@
         margin: 15px 0 10px;
         color: $color-spaceGray;
     }
-    &__add{
+    &__add {
 		position: relative;
 		padding: 25px 32px;
+		
 		border: none;
 		outline: none;
 		background-color: $color-orange;
-		border-radius:10px ;
+		border-radius: 10px;
 		cursor: pointer;
 		transition: 0.3s;
 		border: 2px solid transparent;
 		opacity: 1;
 		&::before,
-		::after{
-			content:'';
+		&::after {
+			content: "";
 			position: absolute;
 			height: 28px;
 			width: 3px;
@@ -99,23 +100,21 @@
 			transition: 0.3s;
 			cursor: pointer;
 		}
-		&::before{
+		&::before {
 			left: 50%;
 			top: 50%;
-			transform: translate(-50% 50%);;
+			transform: translate(-50%, -50%);
 		}
-		
 		&::after {
 			height: 32px;
 			transform: translate(-50%, -50%) rotate(90deg);
 		}
-		
-		&::hover{
+		&:hover {
 			background-color: $color-white;
 			border: 2px solid $color-orange;
 			&::before,
 			&::after {
-			background-color: $color-orange;
+				background-color: $color-orange;
 			}
 		}
 		&:active {

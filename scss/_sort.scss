@@ -57,7 +57,14 @@
         margin: 15px 0 10px;
         color: $color-spaceGray;
     }
-    
+    &__add{
+		position: relative;
+		padding: 25px 32px;
+		border: none;
+		outline: none;
+		background-color: $color-orange;
+		border-radius:10px ;
+	}
 }
 
 @keyframes triangle {

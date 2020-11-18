@@ -204,6 +204,17 @@
 			position: absolute;
 		}
 	}
+
+	@keyframes loader-spin {
+		0% {
+			transform: rotate(0deg);
+			transform: translateX(-50%);
+		}
+		100% {
+			transform: rotate(360deg);
+			transform: translateX(-50%);
+		}
+	}
 @keyframes triangle {
 	0% {
 		bottom: -22px;
@@ -219,4 +230,4 @@
 	}
 }
 	
-	}
+	

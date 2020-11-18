@@ -215,6 +215,30 @@
 			transform: translateX(-50%);
 		}
 	}
+
+	@keyframes checkmark {
+		0% {
+			height: 0;
+			width: 0;
+			opacity: 1;
+		}
+		20% {
+			height: 0;
+			width: $check-width;
+			opacity: 1;
+		}
+		40% {
+			height: $check-height;
+			width: $check-width;
+			opacity: 1;
+		}
+		100% {
+			height: $check-height;
+			width: $check-width;
+			opacity: 1;
+		}
+	}
+
 @keyframes triangle {
 	0% {
 		bottom: -22px;

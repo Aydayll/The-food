@@ -64,6 +64,21 @@
 		outline: none;
 		background-color: $color-orange;
 		border-radius:10px ;
+		&::before,::after{
+			content:'';
+			position: absolute;
+			height: 28px;
+			width: 3px;
+		}
+		&::before{
+
+		}
+		&::after{
+
+		}
+		&::hover{
+			background-color: $color-white;
+		}
 	}
 }
 

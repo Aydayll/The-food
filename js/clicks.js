@@ -43,7 +43,7 @@ sortSection();
 
 function sortFilter(){
   const filterItems= document.querySelectorAll('.filter__element');
-  const saladItems
+  const saladItems= document
   console.log(filterItems);
 }
 sortFilter();

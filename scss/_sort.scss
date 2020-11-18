@@ -67,8 +67,10 @@
 		border-radius:10px ;
 		cursor: pointer;
 		transition: 0.3s;
-		
-		&::before,::after{
+		border: 2px solid transparent;
+		opacity: 1;
+		&::before,
+		::after{
 			content:'';
 			position: absolute;
 			height: 28px;
@@ -76,6 +78,7 @@
 			background-color: $color-white;
 			border-radius: 2px;
 			transition: 0.3s;
+			cursor: pointer;
 		}
 		&::before{
 			left: 50%;
@@ -83,10 +86,18 @@
 			transform: translate(-50% 50%);;
 		}
 		
-
+		&::after {
+			height: 32px;
+			transform: translate(-50%, -50%) rotate(90deg);
+		}
 		
 		&::hover{
 			background-color: $color-white;
+			border: 2px solid $color-orange;
+			&::before,
+			&::after {
+			background-color: $color-orange;
+			}
 		}
 	}
 }

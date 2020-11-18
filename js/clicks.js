@@ -74,3 +74,17 @@ function cart() {
   });
 }
 cart();
+function checkmarkRemover() {
+  const toggle = document.querySelectorAll('.sort__add');
+  toggle.forEach((item) => {
+    item.classList.remove('sort__add--active');
+    const circles = document.querySelectorAll('.circle-loader');
+    circles.forEach((circ) => {
+      circ.classList.remove('load-complete');
+    });
+    const checkMarks = document.querySelectorAll('.checkmark');
+    checkMarks.forEach((check) => {
+      check.classList.remove('checkmark--active');
+    });
+  });
+}

@@ -965,6 +965,8 @@ span {
 
 .sort__picture {
   width: 100%;
+  -webkit-box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.2);
 }
 
 .sort__title {
@@ -1010,6 +1012,17 @@ span {
   position: absolute;
   height: 28px;
   width: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sort__add::before {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50% 50%);
+          transform: translate(-50% 50%);
 }
 
 .sort__add::hover {

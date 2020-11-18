@@ -156,6 +156,13 @@
 		cursor: pointer;
 	}
 
+	.load-complete {
+		display: inline-block;
+		animation: loader-spin 1.2s linear;
+		border-color: $check-color;
+		transition: border 500ms ease-out;
+		cursor: pointer;
+	}
 @keyframes triangle {
 	0% {
 		bottom: -22px;

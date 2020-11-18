@@ -29,17 +29,20 @@ for (let aydai = 0; aydai < 3; aydai++) {
 
 function sortSection() {
   const sortItems = document.querySelectorAll('.filter__items');
-  sortItems.forEach((item) => {
+  const sortItemsName = ['All', 'Salad', 'Fast Food', 'Platters', 'Dessert'];
+  sortItems.forEach((item, index) => {
     item.addEventListener('click', () => {
       sortItems.forEach((everyElement) => {
         everyElement.classList.remove('filter__items--active');
       });
       item.classList.add('filter__items--active');
+      console.log(item);
+      if (item.textContent == sortItemsName[index]) {
+        sortFilter(index);
+      }
     });
   });
-  console.log(sortItems);
 }
-sortSection();
 
 function sortFilter(){
   const filterItems= document.querySelectorAll('.filter__element');

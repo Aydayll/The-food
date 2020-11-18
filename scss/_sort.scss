@@ -180,6 +180,30 @@
 				}
 			}
 		}
+
+
+		&.draw:after {
+			animation-duration: 800ms;
+			animation-timing-function: ease;
+			animation-name: checkmark;
+			top: 73%;
+			left: 42%;
+			transform: scaleX(-1) rotate(135deg) translateX(-100%);
+		}
+
+		&:after {
+			opacity: 1;
+			height: $check-height;
+			width: $check-width;
+			transform-origin: left top;
+			border-right: $check-thickness solid $check-color;
+			border-top: $check-thickness solid $check-color;
+			content: "";
+			left: $check-left;
+			top: $check-height;
+			position: absolute;
+		}
+	}
 @keyframes triangle {
 	0% {
 		bottom: -22px;

@@ -993,6 +993,29 @@ span {
   color: #707070;
 }
 
+.sort__add {
+  position: relative;
+  padding: 25px 32px;
+  border: none;
+  outline: none;
+  background-color: #ffbe00;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sort__add::before, .sort__add ::after {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 3px;
+}
+
+.sort__add::hover {
+  background-color: #fff;
+}
+
 @-webkit-keyframes triangle {
   0% {
     bottom: -22px;

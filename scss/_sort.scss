@@ -66,11 +66,20 @@
 		border-radius:10px ;
 		cursor: pointer;
 		transition: 0.3s;
+		
 		&::before,::after{
 			content:'';
 			position: absolute;
 			height: 28px;
 			width: 3px;
+			background-color: $color-white;
+			border-radius: 2px;
+			transition: 0.3s;
+		}
+		&::before{
+			left: 50%;
+			top: 50%;
+			transform: translate(-50% 50%);;
 		}
 		
 

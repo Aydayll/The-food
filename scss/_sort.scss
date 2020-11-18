@@ -163,6 +163,23 @@
 		transition: border 500ms ease-out;
 		cursor: pointer;
 	}
+
+	.checkmark {
+		display: none;
+		cursor: pointer;
+		&--active {
+			display: block;
+			opacity: 0;
+			animation: 0.3s eraly 0s linear forwards;
+			@keyframes eraly {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+		}
 @keyframes triangle {
 	0% {
 		bottom: -22px;
@@ -177,3 +194,5 @@
 		opacity: 1;
 	}
 }
+	
+	}

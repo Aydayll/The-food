@@ -88,3 +88,18 @@ function checkmarkRemover() {
     });
   });
 }
+
+function checkmark() {
+  const toggle = document.querySelectorAll('.sort__add');
+  const circles = document.querySelectorAll('.circle-loader');
+  const checkMarks = document.querySelectorAll('.checkmark');
+  toggle.forEach((item, index) => {
+    item.addEventListener('click', function (samaKnopka) {
+      samaKnopka.target.classList.add('sort__add--active');
+      circles[index].classList.add('load-complete');
+      checkMarks[index].classList.add('checkmark--active');
+      setTimeout(checkmarkRemover, 1000);
+    });
+  });
+}
+checkmark();

@@ -30,6 +30,18 @@
 				}
 			}
 		}
+		&__element {
+			animation: sultan 1s;
+			@keyframes sultan {
+				from {
+					transform: scale(0);
+				}
+				to {
+					transform: scale(1);
+				}
+			}
+		}
+	
     }
     &__row{
         padding-top: 65px;

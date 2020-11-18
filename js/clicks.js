@@ -40,3 +40,10 @@ function sortSection() {
   console.log(sortItems);
 }
 sortSection();
+
+function sortFilter(){
+  const filterItems= document.querySelectorAll('.filter__element');
+  const saladItems
+  console.log(filterItems);
+}
+sortFilter();

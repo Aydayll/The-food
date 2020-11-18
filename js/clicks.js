@@ -43,10 +43,21 @@ function sortSection() {
     });
   });
 }
+sortSection();
 
-function sortFilter(){
-  const filterItems= document.querySelectorAll('.filter__element');
-  const saladItems= document
-  console.log(filterItems);
-}
-sortFilter();
+function sortFilter(index) 
+  const filterItems = document.querySelectorAll('.filter__element');
+  const filterItemsName = [
+    'data-all',
+    'data-salad',
+    'data-fast-food',
+    'data-platters',
+    'data-dessert',
+  ];
+  filterItems.forEach((ayday) => {
+    if (!ayday.hasAttribute(filterItemsName[index])) {
+      ayday.style.display = 'none';
+    } else {
+      ayday.style.display = 'block';
+    }
+  });

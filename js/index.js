@@ -1,3 +1,9 @@
+import allSliders from './slider.js';
+
+
+ allSliders
+
+
 let scene = document.getElementById('scene');
 let parallax = new Parallax(scene);
 

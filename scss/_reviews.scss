@@ -13,5 +13,7 @@
         @include font($font-cream, 36px, 400);
         color: $color-white;
     }
-    
+    &__description{
+        @include font($font-poppins, 16px, 400)
+    }
 }

@@ -3,6 +3,15 @@
     padding: 200px 0;
     &::before{
         content: '';
-        @include position()
+        @include position(absolute, 0, 0);
+        z-index: -1;
+        width: 100%;
+        min-height: 1627px;
+        background-color: $color-darkBlue;    
     }
+    &__title{
+        @include font($font-cream, 36px, 400);
+        color: $color-white;
+    }
+    
 }

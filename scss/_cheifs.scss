@@ -29,7 +29,7 @@
             }
         }
     }
-}
+
     &__info{
         position: absolute;
         left: 0;
@@ -38,5 +38,16 @@
         background-color: $color-orange;
         text-align: center;
         border-radius: 26px;
-        max-width: 367px;
+        max-width: 370px;
+        background-color: rgba(223, 182, 94, 0.7);
+		transition: 0.3s;
     }
+    &__name {
+		@include font($font-poppins, 30px, 500);
+		transition: 0.3s;
+	}
+	&__speciality {
+		@include font($font-poppins, 24px, 400);
+		transition: 0.3s;
+	}
+}

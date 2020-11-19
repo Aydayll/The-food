@@ -6,10 +6,11 @@
         position: relative;
         padding: 22px;
         overflow: hidden;
-        box-shadow: 0 8px;
+        
     }
     img{
         max-width: 100%;
+        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
     }
     &__info{
         position: absolute;

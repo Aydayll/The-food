@@ -1492,4 +1492,31 @@ span {
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+.cheifs__title {
+  color: #fff;
+}
+
+.cheifs__item {
+  position: relative;
+  padding: 22px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cheifs img {
+  max-width: 100%;
+}
+
+.cheifs__info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #ffbe00;
+  text-align: center;
+  border-radius: 26px;
+  max-width: 367px;
+}
 /*# sourceMappingURL=index.css.map */

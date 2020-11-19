@@ -14,6 +14,9 @@
         color: $color-white;
     }
     &__description{
-        @include font($font-poppins, 16px, 400)
+        @include font($font-poppins, 16px, 400);
+        margin: 35px 0 105px;
+        line-height: 26px;
+        color: $color-darkGray;
     }
 }

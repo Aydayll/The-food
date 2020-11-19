@@ -32,5 +32,8 @@
            line-height: 26px;
            color: $color-darkGray;
        }
+       .slick-next.slick-arrow{
+           background-color: $color-orange;
+       }
     }
 }

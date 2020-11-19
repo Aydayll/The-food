@@ -1,5 +1,6 @@
-import allSliders from './slider.js';
 
+import allSliders from './slider.js';
+import './clicks.js';
 
  allSliders
 

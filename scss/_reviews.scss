@@ -1,0 +1,8 @@
+.reviews{
+    position: relative;
+    padding: 200px 0;
+    &::before{
+        content: '';
+        @include position()
+    }
+}

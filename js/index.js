@@ -2,7 +2,7 @@
 import allSliders from './slider.js';
 import './clicks.js';
 
- allSliders
+ allSliders();
 
 
 let scene = document.getElementById('scene');

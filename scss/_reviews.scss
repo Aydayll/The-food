@@ -19,4 +19,12 @@
         line-height: 26px;
         color: $color-darkGray;
     }
+    .slider{
+       &__name{
+           @include font($font-poppins, 18px, 400);
+           margin: 60px 0 40px;
+           color: $color-orange;
+           text-align: center;
+       }
+    }
 }

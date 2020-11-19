@@ -1282,4 +1282,38 @@ span {
     opacity: 1;
   }
 }
+
+.reviews {
+  position: relative;
+  padding: 200px 0;
+}
+
+.reviews::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  z-index: -1;
+  width: 100%;
+  min-height: 1627px;
+  background-color: #0b0320;
+}
+
+.reviews__title {
+  font-family: "Fresh Cream";
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.reviews__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 35px 0 105px;
+  line-height: 26px;
+  color: #9e9e9e;
+}
 /*# sourceMappingURL=index.css.map */

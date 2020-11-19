@@ -4,8 +4,21 @@
     }
     &__item{
         position: relative;
+        padding: 22px;
+        overflow: hidden;
+        box-shadow: 0 8px;
+    }
+    img{
+        max-width: 100%;
     }
     &__info{
-
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: $color-orange;
+        text-align: center;
+        border-radius: 26px;
+        max-width: 367px;
     }
 }

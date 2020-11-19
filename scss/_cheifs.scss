@@ -1,16 +1,20 @@
 .cheifs{
+    padding-bottom: 195px;
     &__title{
         color: $color-white;
     }
     &__item{
         position: relative;
-        padding: 22px;
         overflow: hidden;
+        z-index: 1;
+		box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
+		border-radius: 26px;
+		background-color: transparent;
         
     }
     img{
-        max-width: 100%;
-        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
+        height: 482px;
+        width: 100%;
     }
     &__info{
         position: absolute;

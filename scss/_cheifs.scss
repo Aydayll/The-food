@@ -16,6 +16,20 @@
         height: 482px;
         width: 100%;
     }
+    &:hover {
+        .chiefs {
+            &__name {
+                color: $color-white;
+            }
+            &__speciality {
+                color: $color-gray;
+            }
+            &__info {
+                background-color: $color-orange;
+            }
+        }
+    }
+}
     &__info{
         position: absolute;
         left: 0;
@@ -26,4 +40,3 @@
         border-radius: 26px;
         max-width: 367px;
     }
-}

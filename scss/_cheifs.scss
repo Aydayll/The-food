@@ -1,5 +1,8 @@
 .cheifs{
     padding-bottom: 195px;
+    .col-3 {
+		padding: 0 22px;
+	}
     &__title{
         color: $color-white;
     }

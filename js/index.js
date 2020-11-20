@@ -1,4 +1,3 @@
-
 import allSliders from './slider.js';
 import './clicks.js';
 

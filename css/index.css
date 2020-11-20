@@ -1503,51 +1503,31 @@ span {
   display: none;
 }
 
-.cheifs {
+.chiefs {
   padding-bottom: 195px;
 }
 
-.cheifs__title {
+.chiefs__title {
   color: #fff;
 }
 
-.cheifs__item {
+.chiefs .col-3 {
+  padding: 0 22px;
+}
+
+.chiefs__item {
   position: relative;
+  overflow: hidden;
   z-index: 1;
+  -webkit-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
   border-radius: 26px;
   background-color: transparent;
 }
 
-.cheifs img {
-  height: 460px;
+.chiefs__item img {
+  height: 482px;
   width: 100%;
-}
-
-.cheifs .cheifs__info {
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  text-align: center;
-  border-radius: 26px;
-  max-width: 370px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.cheifs__name {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.cheifs__speciality {
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 /* Slider */

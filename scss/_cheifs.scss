@@ -3,9 +3,7 @@
     .col-3 {
 		padding: 0 22px;
 	}
-    &__title{
-        color: $color-white;
-    }
+    
     &__item{
         position: relative;
         
@@ -16,21 +14,23 @@
         
     }
     img{
-        height: 460px;
+        height: 480px;
         width: 100%;
     }
     &
 
     &__info{
-      
-        left: 0;
+        position: absolute;
+        left: 50%;
         bottom: 0;
-        z-index: 1;
-        
+        z-index: 0;
+        transform: translateX(-50%);
+		padding: 24px 0 20px;
+		width: 100%;
         text-align: center;
         border-radius: 26px;
         max-width: 370px;
-        
+		background-color: rgba(223, 182, 94, 0.7);
 		transition: 0.3s;
     }
     &__name {

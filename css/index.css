@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url(c:\Users\User\Desktop\The-food\scss\vendors\slick.css);
 @font-face {
   font-family: 'Fresh Cream';
   src: url("../fonts/Fresh_Cream.eot") format("eot"), url("../fonts/Fresh_Cream.woff") format("woff"), url("../fonts/Fresh_Cream.ttf") format("truetype"), url("../fonts/Fresh_Cream.svg") format("svg");
@@ -154,6 +153,10 @@ span {
   color: #9e9e9e;
 }
 
+.col-2 {
+  width: 16.66%;
+}
+
 .col-3 {
   width: 25%;
   padding-bottom: 90px;
@@ -296,6 +299,10 @@ span {
   border-radius: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
+}
+
+.hero {
+  padding-top: 150px;
 }
 
 .hero .container {
@@ -1357,8 +1364,11 @@ span {
 
 .reviews .slider .slick-next.slick-arrow,
 .reviews .slider .slick-prev.slick-arrow {
+  position: absolute;
   background-color: #ffbe00;
-  background: url("../img/slider-arrow.svg") no-repeat center;
+  background-image: url("../img/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: 0;
   padding: 21px 27px;
   outline: none;
@@ -1493,30 +1503,50 @@ span {
   display: none;
 }
 
+.cheifs {
+  padding-bottom: 195px;
+}
+
 .cheifs__title {
   color: #fff;
 }
 
 .cheifs__item {
   position: relative;
-  padding: 22px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  border-radius: 26px;
+  background-color: transparent;
 }
 
 .cheifs img {
-  max-width: 100%;
+  height: 482px;
+  width: 100%;
 }
 
-.cheifs__info {
-  position: absolute;
+.cheifs .cheifs__info {
   left: 0;
   bottom: 0;
   z-index: 1;
-  background-color: #ffbe00;
   text-align: center;
   border-radius: 26px;
-  max-width: 367px;
+  max-width: 370px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cheifs__name {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cheifs__speciality {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=index.css.map */

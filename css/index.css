@@ -164,6 +164,7 @@ span {
 
 .col-4 {
   width: 33.33%;
+  padding-top: 90px;
 }
 
 .col-5 {
@@ -1535,7 +1536,6 @@ span {
 }
 
 .blogs__item {
-  padding-top: 100px;
   -webkit-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
   border-radius: 38px;
@@ -1545,11 +1545,14 @@ span {
 
 .blogs__item--top {
   position: relative;
-  min-height: 320px;
 }
 
 .blogs__item--bottom {
   padding: 30px 42px 38px;
+}
+
+.blogs__item:hover {
+  background-color: #ffbe00;
 }
 
 .blogs__image {
@@ -1579,6 +1582,12 @@ span {
   font-weight: 400;
   margin: 20px 0 10px;
   color: #707070;
+}
+
+.blogs__btn {
+  display: block;
+  margin: 0 0 0 auto;
+  max-width: 144px;
 }
 
 /* Slider */

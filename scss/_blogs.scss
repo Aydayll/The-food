@@ -3,16 +3,19 @@
         padding: 42px;
     }
     &__item{
-        padding-top: 100px;
+       
         box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
         border-radius: 38px;
         transition: 0.3s;
     &--top{
         position: relative;
-        min-height: 320px;;
+        
     }
     &--bottom{
         padding: 30px 42px 38px;
+    }
+    &:hover{
+        background-color: $color-orange;
     }
 }
     &__image{
@@ -36,6 +39,8 @@
         color: $color-spaceGray;
     }
     &__btn{
-        
+        display: block;
+        margin: 0 0 0 auto;
+        max-width: 144px;
     }
 }

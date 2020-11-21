@@ -1548,7 +1548,7 @@ span {
 }
 
 .blogs__item--bottom {
-  padding: 30px 42px 38px;
+  padding: 30px 40px 38px;
 }
 
 .blogs__item:hover {
@@ -1557,11 +1557,13 @@ span {
 
 .blogs__item:hover .blogs__title,
 .blogs__item:hover .blogs__description,
+.blogs__item:hover .blogs__btn,
 .blogs__item:hover .blogs__date {
   color: #fff;
 }
 
-.blogs__item:hover .blogs__btn {
+.blogs__item:hover .blogs__btn,
+.blogs__item:hover .blogs__date {
   background-color: #222222;
 }
 

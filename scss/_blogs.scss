@@ -13,16 +13,18 @@
         
     }
     &--bottom{
-        padding: 30px 42px 38px;
+        padding: 30px 40px 38px;
     }
     &:hover{
         background-color: $color-orange;
         #{$self}__title,
         #{$self}__description,
+        #{$self}__btn,
         #{$self}__date{
         color: $color-white;
         }
-        #{$self}__btn{
+        #{$self}__btn,
+        #{$self}__date{
            background-color: $color-black;
         }
     }

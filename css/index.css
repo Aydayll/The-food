@@ -1548,8 +1548,10 @@ span {
   content: '';
   position: absolute;
   height: 100%;
-  width: 100%;
-  left: 0;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 0;
   -webkit-box-shadow: 0 8px 15px 0 #ffbe00;
           box-shadow: 0 8px 15px 0 #ffbe00;
@@ -1568,6 +1570,11 @@ span {
 
 .blogs__item:hover {
   background-color: #ffbe00;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.blogs__item:hover::before {
   -webkit-box-shadow: 0 15px 35px 0 #ffbe00;
           box-shadow: 0 15px 35px 0 #ffbe00;
 }

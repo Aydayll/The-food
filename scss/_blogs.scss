@@ -12,8 +12,9 @@
             content: '';
             position: absolute;
             height: 100%;
-            width: 100%;
-            left: 0;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
             top: 0;
             box-shadow: 0 8px 15px 0 $color-orange;
             border-radius: 38px;
@@ -27,7 +28,10 @@
     }
     &:hover{
         background-color: $color-orange;
-        box-shadow: 0 15px 35px 0 $color-orange;
+        box-shadow:none;
+        &::before{
+            box-shadow: 0 15px 35px 0 $color-orange;
+        }
         #{$self}__title,
         #{$self}__description,
         #{$self}__btn,

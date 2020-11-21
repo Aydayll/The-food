@@ -9,7 +9,15 @@
         border-radius: 38px;
         transition: 0.3s;
         &::before{
-            
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            box-shadow: 0 8px 15px 0 $color-orange;
+            border-radius: 38px;
+            transition: 0.3s;
         }
     &--top{
         position: relative; 

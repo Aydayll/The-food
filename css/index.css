@@ -1544,6 +1544,20 @@ span {
   transition: 0.3s;
 }
 
+.blogs__item::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-box-shadow: 0 8px 15px 0 #ffbe00;
+          box-shadow: 0 8px 15px 0 #ffbe00;
+  border-radius: 38px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .blogs__item--top {
   position: relative;
 }

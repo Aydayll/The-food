@@ -1536,6 +1536,7 @@ span {
 }
 
 .blogs__item {
+  position: relative;
   -webkit-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
   border-radius: 38px;
@@ -1553,6 +1554,8 @@ span {
 
 .blogs__item:hover {
   background-color: #ffbe00;
+  -webkit-box-shadow: 0 15px 35px 0 #ffbe00;
+          box-shadow: 0 15px 35px 0 #ffbe00;
 }
 
 .blogs__item:hover .blogs__title,

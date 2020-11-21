@@ -13,6 +13,7 @@
     &__date{
         position: absolute;
         left: 42px;
-        bottom: 22px;
+        top: calc(100%-22px);
+        transform: translateY(-100%);
     }
 }

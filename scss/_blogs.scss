@@ -1,4 +1,5 @@
 .blogs{
+    $self: &;
     &__column{
         padding: 42px;
     }
@@ -16,6 +17,9 @@
     }
     &:hover{
         background-color: $color-orange;
+        #{$self}__title{
+            color: $color-white;
+        }
     }
 }
     &__image{

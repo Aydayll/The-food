@@ -1555,6 +1555,10 @@ span {
   background-color: #ffbe00;
 }
 
+.blogs__item:hover .blogs__title {
+  color: #fff;
+}
+
 .blogs__image {
   max-width: 100%;
   min-height: 100%;

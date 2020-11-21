@@ -3,4 +3,8 @@
         position: relative;
         min-height: 320px;;
     }
+    &__image{
+        min-height: 100%;
+        border-radius: 38px;
+    }
 }

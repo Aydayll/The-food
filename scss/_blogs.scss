@@ -8,6 +8,9 @@
         box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
         border-radius: 38px;
         transition: 0.3s;
+        &::before{
+            
+        }
     &--top{
         position: relative; 
     }

@@ -1530,6 +1530,26 @@ span {
   width: 100%;
 }
 
+.blogs__item {
+  padding-top: 42px;
+}
+
+.blogs__item--top {
+  position: relative;
+  min-height: 320px;
+}
+
+.blogs__image {
+  min-height: 100%;
+  border-radius: 38px;
+}
+
+.blogs__date {
+  position: absolute;
+  left: 42px;
+  bottom: 22px;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;

@@ -3,7 +3,10 @@
         padding: 42px;
     }
     &__item{
-       box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+        padding-top: 100px;
+        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 38px;
+        transition: 0.3s;
     &--top{
         position: relative;
         min-height: 320px;;
@@ -20,11 +23,16 @@
     &__date{
         position: absolute;
         left: 42px;
-        top: calc(100%- 42px);
+        top: calc(100% - 42px);
         transform: translateY(-100%);
     }
     &__title{
-        @include font($font-popppins, 24px);
+        @include font($font-poppins, 24px);
         font-weight: 500;
+    }
+    &__description{
+        @include font($font-poppins, 16px 400);
+        margin: 20px 0 10px;
+        color: $color-spaceGray;
     }
 }

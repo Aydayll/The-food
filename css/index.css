@@ -1530,13 +1530,26 @@ span {
   width: 100%;
 }
 
-.blogs__item {
+.blogs__column {
   padding: 42px;
+}
+
+.blogs__item {
+  padding-top: 100px;
+  -webkit-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 38px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .blogs__item--top {
   position: relative;
   min-height: 320px;
+}
+
+.blogs__item--bottom {
+  padding: 30px 42px 38px;
 }
 
 .blogs__image {
@@ -1548,9 +1561,24 @@ span {
 .blogs__date {
   position: absolute;
   left: 42px;
-  top: calc(100%- 30px);
+  top: calc(100% - 42px);
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.blogs__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-weight: 500;
+}
+
+.blogs__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px 400;
+  font-weight: 400;
+  margin: 20px 0 10px;
+  color: #707070;
 }
 
 /* Slider */

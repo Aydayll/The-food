@@ -62,6 +62,7 @@ function sortFilter(index) {
     }
   });
 }
+
 function cart() {
   const addButtons = document.querySelectorAll('.sort__add');
   const cartCounter = document.querySelector('.cart__counter');
@@ -74,6 +75,7 @@ function cart() {
   });
 }
 cart();
+
 function checkmarkRemover() {
   const toggle = document.querySelectorAll('.sort__add');
   toggle.forEach((item) => {

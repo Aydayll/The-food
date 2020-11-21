@@ -23,4 +23,8 @@
         top: calc(100%- 42px);
         transform: translateY(-100%);
     }
+    &__title{
+        @include font($font-popppins, 24px);
+        font-weight: 500;
+    }
 }

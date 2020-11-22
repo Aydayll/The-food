@@ -10,7 +10,7 @@
         @include font($font-poppins, 24px);
         font-weight: 500;
         margin-bottom: 10px;
-        font-size: 10px;
+       
         color: $color-spaceGray;
     }
     &__description{
@@ -19,18 +19,18 @@
         color: $color-spaceGray;
         max-width: 400px;
     }
-    
-    
+    &__list li {
+        margin-top: 10px;
+    }
+    &__list a {
+		@include font($font-poppins, 16px, 500);
+		line-height: 157%;
+		color: $color-black;
+	}
 
 }
 
 
-
-
-.footer__list li {
-    margin-top: 10px;
-    font-size: 14px;
-}
 .footer__row{
     display: flex;
 }

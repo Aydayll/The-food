@@ -87,6 +87,18 @@ span {
   color: #ffbe00;
 }
 
+.btn-black {
+  background-color: #222222;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-black:hover {
+  background-color: #ffbe00;
+  color: #222222;
+}
+
 .text-right {
   text-align: right;
 }

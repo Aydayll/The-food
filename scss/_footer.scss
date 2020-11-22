@@ -12,18 +12,16 @@
         margin-bottom: 10px;
         font-size: 10px;
         color: $color-spaceGray;
+    }
     &__description{
+        @include font($font-poppins, 16px, 400);
         margin-top: 30px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 157%;
         color: $color-spaceGray;
-        max-width: 200px;
+        max-width: 400px;
     }
     
     
-}
+
 }
 
 

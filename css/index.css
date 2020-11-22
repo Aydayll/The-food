@@ -1639,7 +1639,6 @@ span {
 
 .footer__bottom {
   padding: 40px 0;
-  background-color: #222222;
 }
 
 .footer__title {
@@ -1672,28 +1671,53 @@ span {
   color: #222222;
 }
 
-.footer__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.footer__form {
+  padding-top: 90px;
 }
 
-.footer__bottom {
-  padding: 25px 0;
+.footer__email {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
 }
 
-.footer__bottom .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.footer__email::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
 }
 
-.footer__bottom span, .footer__bottom a {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
-  color: #212121;
+.footer__email:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.footer__email::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.footer__email::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.footer__email__copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
 }
 
 /* Slider */

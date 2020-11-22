@@ -4,7 +4,7 @@
     }
     &__bottom {
 		padding: 40px 0;
-		background-color: $color-black;
+		
 	}
     &__title{
         @include font($font-poppins, 24px);
@@ -35,25 +35,17 @@
 		border: none;
 		outline: none;
         border-radius: 12px;
+		&::placeholder {
+			@include font($font-poppins, 16px, 400);
+			color: $color-spaceGray;
+        }
+        &__copyright {
+            @include font($font-poppins, 16px, 400);
+            color: $color-white;
+        }
+		
     }
 
 }
 
 
-.footer__row{
-    display: flex;
-}
-
-.footer__bottom {
-    padding: 25px 0;
-}
-.footer__bottom .row {
-    justify-content: space-between;
-}
-.footer__bottom span, .footer__bottom a {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-    color: #212121;
-}

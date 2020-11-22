@@ -28,7 +28,14 @@
     }
     &__form {
 		padding-top: 90px;
-	}
+    }
+    &__email {
+		@include font($font-poppins, 16px, 400);
+		padding: 14px 24px;
+		border: none;
+		outline: none;
+        border-radius: 12px;
+    }
 
 }
 

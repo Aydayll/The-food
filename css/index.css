@@ -1651,6 +1651,8 @@ span {
 
 .footer__bottom {
   padding: 40px 0;
+  background-color: #222222;
+  text-align: center;
 }
 
 .footer__title {
@@ -1725,7 +1727,7 @@ span {
   color: #707070;
 }
 
-.footer__email__copyright {
+.footer__copyright {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;

@@ -3,7 +3,9 @@
         padding: 80px 0;
     }
     &__bottom {
-		padding: 40px 0;
+        padding: 40px 0;
+        background-color: $color-black;
+        text-align: center;
 		
 	}
     &__title{
@@ -39,12 +41,13 @@
 			@include font($font-poppins, 16px, 400);
 			color: $color-spaceGray;
         }
+    }
         &__copyright {
             @include font($font-poppins, 16px, 400);
             color: $color-white;
         }
 		
-    }
+    
 
 }
 

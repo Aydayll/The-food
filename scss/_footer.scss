@@ -10,7 +10,6 @@
         @include font($font-poppins, 24px);
         font-weight: 500;
         margin-bottom: 10px;
-       
         color: $color-spaceGray;
     }
     &__description{
@@ -26,6 +25,9 @@
 		@include font($font-poppins, 16px, 500);
 		line-height: 157%;
 		color: $color-black;
+    }
+    &__form {
+		padding-top: 90px;
 	}
 
 }
